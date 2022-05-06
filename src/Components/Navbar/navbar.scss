@@ -1,0 +1,26 @@
+nav {
+	position: sticky;
+	top: 2rem;
+
+	ul{
+		display: flex;
+		justify-content: center;
+		gap: 3rem;
+		padding: 0.5rem;
+	}
+
+	li {
+		list-style: none;
+		padding: 0.3rem 1rem;
+		background-color: white;
+		border-radius: 2rem;
+	}
+
+	li::after{
+		content: '';
+		display: block;
+		height: 0.25rem;
+		width: 100%;
+		background-color: burlywood;
+	}
+}

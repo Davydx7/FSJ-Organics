@@ -12,7 +12,6 @@ function App() {
       <div className='container'>
         <Header />
         <Navbar />
-        <h1>FSJ Organics</h1>
         <Outlet />
         <Footer />
       </div>

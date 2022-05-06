@@ -1,6 +1,7 @@
 import Button from "../../Components/Button"
 import ReviewCard from "../../Components/ReviewCard"
 import useReviews from "../../Stores/reviewStore"
+import './home.scss'
 // import {ReactComponent as Hero} from ''
 
 const Home = () => {
@@ -10,8 +11,8 @@ const Home = () => {
 		<main className="Home">
 			<section className="hero">
 				<div className="herotext">
-					<h1>You Skin deserves the Best!</h1>
-					<p>Let your skin speak before you do</p>
+					<h1>Your Skin deserves the Best!</h1>
+					<p>Let your skin speak before you do.</p>
 					<Button />
 				</div>
 				{/* <Hero /> */}

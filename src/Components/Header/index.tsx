@@ -9,7 +9,7 @@ const Header = () => {
 	return (
 		<header>
 			<Link to="#">Logo</Link>
-			<h1>Best Beauty Brand</h1>
+			<h1>Flawless Skincare By Jade</h1>
 			<Button onclick={changeTheme}>
 				Change Theme
 			</Button>
