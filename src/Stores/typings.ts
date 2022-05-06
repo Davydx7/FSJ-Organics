@@ -21,7 +21,7 @@ export type ReviewData = {
 export type ProductStore = {
   products: ProductData[];
   deleteOne: () => void
-  search: (searchTerm: string) => void
+  search: React.ChangeEventHandler<HTMLInputElement>
 }
 
 export type ReviewStore = {

@@ -6,13 +6,23 @@ import { ProductStore } from "../../Stores/typings"
 
 const Products: React.FC = () => {
 	const products = useProducts((state: ProductStore) => state.products)
+	const filterProducts = useProducts(state => state.search)
+	const mappedProducts = products.map((product: any) => 
+	<ProductCard key={product.id} {...product} />
+	)
+
 	return (
 		<main className="products">
 			<div>
-				<input type="text" />
+				<input type="text" onChange={filterProducts} />
 			</div>
 			<section>
-				{products.map((product: any) => <ProductCard key={product.id} {...product} />)}
+				{mappedProducts.length ?
+					mappedProducts :
+					<div>
+						<h2>No products matches your search</h2>
+						<p>Please try searching another term</p>
+					</div>}
 			</section>
 		</main>
 	)

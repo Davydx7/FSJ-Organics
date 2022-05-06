@@ -11,8 +11,9 @@ const useProducts = create<ProductStore>((set) => ({
       return newState
     })
   },
-  search(searchTerm) {
+  search(e) {
     set((state) => {
+      let searchTerm = e.currentTarget.value
       let newState = { ...state }
       newState.products = data.filter(product => {
         //search only by name, description and price will be implemented later
