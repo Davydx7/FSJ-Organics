@@ -7,8 +7,13 @@ import { ProductStore } from "../../Stores/typings"
 const Products: React.FC = () => {
 	const products = useProducts((state: ProductStore) => state.products)
 	return (
-		<main>
-			{products.map((product: any) => <ProductCard key={product.id} {...product} />)}
+		<main className="products">
+			<div>
+				<input type="text" />
+			</div>
+			<section>
+				{products.map((product: any) => <ProductCard key={product.id} {...product} />)}
+			</section>
 		</main>
 	)
 }

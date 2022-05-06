@@ -9,11 +9,13 @@ function App() {
   const theme = useTheme(state => state.theme);
   return (
     <div className="App" data-theme={theme}>
-      <Header />
-      <Navbar />
-      <h1>FSJ Organics</h1>
-      <Outlet />
-      <Footer />
+      <div className='container'>
+        <Header />
+        <Navbar />
+        <h1>FSJ Organics</h1>
+        <Outlet />
+        <Footer />
+      </div>
     </div>
   );
 }

@@ -1,5 +1,22 @@
 .App {
+  padding: 0 5rem;
   text-align: center;
-  background-color: lightblue;
+  background-color: grey;
   min-height: 100vh;
+  // overflow-y: scroll;
+  overflow-x: hidden;
+
+  
+  .container {
+    margin: 0 5rem;
+    min-height: 100vh;
+    background-color: var(--primary);
+  }
 }
+
+// @supports (scrollbar-gutter: stable) {
+//   .App {
+//     overflow-y: auto;
+//     scrollbar-gutter: stable;
+//   }
+// }

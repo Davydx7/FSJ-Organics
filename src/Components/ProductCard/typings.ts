@@ -3,7 +3,7 @@ export type Props = {
 	description: string;
 	img: string;
 	alt?: string;
-	price: number;
+	price: string;
 	qty?: number;
 	id: number;
 };

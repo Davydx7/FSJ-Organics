@@ -8,6 +8,7 @@ import Home from './Routes/Home';
 import Products from './Routes/Products';
 import About from './Routes/About';
 import Contact from './Routes/Contact';
+import Blog from './Routes/Blog';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -21,6 +22,7 @@ root.render(
           <Route path='products' element={<Products />} />
           <Route path='about' element={<About />} />
           <Route path='contact' element={<Contact />} />
+          <Route path='blog' element={<Blog />} />
         </Route>
       </Routes>
     </BrowserRouter>
