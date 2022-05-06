@@ -1,0 +1,58 @@
+const data: object[] = [
+	 {
+		 name: 'Cleanser',
+		 description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.',
+		 image: 'https://via.placeholder.com/150',
+		 alt: 'This is a skincare product',
+		 price: '$100',
+		 id: 1,
+		 quantity: 0,
+	 },
+	 {
+		 name: 'Pimples Off',
+		 description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.',
+		 image: 'https://via.placeholder.com/150',
+		 alt: 'This is a skincare product',
+		 price: '$100',
+		 id: 2,
+		 quantity: 0,
+	 },
+	 {
+		 name: 'Shower Gel',
+		 description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.',
+		 image: 'https://via.placeholder.com/150',
+		 alt: 'This is a skincare product',
+		 price: '$100',
+		 id: 3,
+		 quantity: 0,
+	 },
+	 {
+		 name: 'Face Soap',
+		 description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.',
+		 image: 'https://via.placeholder.com/150',
+		 alt: 'This is a skincare product',
+		 price: '$100',
+		 id: 4,
+		 quantity: 0,
+	 },
+	 {
+		 name: 'Raspberry Soap',
+		 description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.',
+		 image: 'https://via.placeholder.com/150',
+		 alt: 'This is a skincare product',
+		 price: '$100',
+		 id: 5,
+		 quantity: 0,
+	 },
+	 {
+		 name: 'Carrot Oil',
+		 description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.',
+		 image: 'https://via.placeholder.com/150',
+		 alt: 'This is a skincare product',
+		 price: '$100',
+		 id: 6,
+		 quantity: 10,
+	 },
+];
+
+export default data;

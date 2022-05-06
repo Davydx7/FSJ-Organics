@@ -1,5 +1,24 @@
-$primary: rgb(160, 233, 119);
+// COLORS
+:root {
+	--primary: rgb(160, 233, 119);
 
-[data-theme] {
-	$primary: hsl(180, 42%, 70%);
+	// Font weights
+	--w-light: 300;
+	--normal: 400;
+	--semibold: 500;
+	--bold: 700;
+
+	// Font size
+	--small: 0.875rem;
+	--normal: 1rem;
+	--large: 1.25rem;
+
+	//Breakpoints
+	--mobile: 600px;
+	--tablet: 768px;
+	--desktop: 1024px;
+}
+
+[data-theme="dark"] {
+	--primary: hsl(180, 42%, 70%);
 }

@@ -1,0 +1,36 @@
+// Main Typography
+body {
+	font-size: 1rem;
+}
+
+h1 {
+	font-size: 1.5rem;
+	font-weight: var(--w-bold);
+	line-height: 35px;
+	letter-spacing: -0.3333px;
+	margin: 0;
+}
+
+h2 {
+	font-size: 1.25px;
+	font-weight: var(--w-semibold);
+	line-height: 29px;
+	letter-spacing: -0.25px;
+	margin: 0;
+}
+
+h3 {
+	font-size: 1.05px;
+	font-weight: var(--w-semibold);
+	line-height: 16px;
+	letter-spacing: -0.25px;
+	margin: 0;
+}
+
+h4 {
+	font-size: 0.95px;
+	font-weight: var(--w-normal);
+	line-height: 20px;
+	letter-spacing: -0.2px;
+	margin: 0;
+}
