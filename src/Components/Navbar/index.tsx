@@ -1,15 +1,16 @@
 import './navbar.scss';
 import { NavLink } from 'react-router-dom';
+// import classnames from 'classnames';
 
 const Navbar = () => {
 	return (
 		<nav>
 			<ul>
-				<li><NavLink to="/">Home</NavLink></li>
-				<li><NavLink to="/products">Products</NavLink></li>
-				<li><NavLink to="/about">About</NavLink></li>
-				<li><NavLink to="/contact">Contact us</NavLink></li>
-				<li><NavLink to="/blog">Blog</NavLink></li>
+				<NavLink className={({ isActive }) => (isActive ? 'active' : 'inactive')} to="/">Home</NavLink>
+				<NavLink className={({ isActive }) => (isActive ? 'active' : 'inactive')} to="/products">Products</NavLink>
+				<NavLink className={({ isActive }) => (isActive ? 'active' : 'inactive')} to="/about">About</NavLink>
+				<NavLink className={({ isActive }) => (isActive ? 'active' : 'inactive')} to="/contact">Contact us</NavLink>
+				<NavLink className={({ isActive }) => (isActive ? 'active' : 'inactive')} to="/blog">Blog</NavLink>
 			</ul>
 		</nav>
 	)

@@ -1,6 +1,8 @@
 import Button from "../../Components/Button"
 import ReviewCard from "../../Components/ReviewCard"
 import useReviews from "../../Stores/reviewStore"
+
+import hero from "../../Assets/images/hero.png"
 import './home.scss'
 // import {ReactComponent as Hero} from ''
 
@@ -15,7 +17,7 @@ const Home = () => {
 					<p>Let your skin speak before you do.</p>
 					<Button />
 				</div>
-				{/* <Hero /> */}
+				<img src={hero} alt="hero" />
 			</section>
 			<section className="reviews">
 				<ul>

@@ -1,16 +1,19 @@
 .App {
-  padding: 1rem 5rem;
+  padding: 1rem 1vw;
   text-align: center;
   background-color: grey;
   min-height: 100vh;
+  color: var(--text);
+  display: flex;
+
   // overflow-y: scroll;
   // overflow-x: hidden;
 
   
   .container {
     margin: 0 5rem;
-    min-height: 100vh;
-    background-color: var(--primary);
+    width: 100%;
+    background-color: var(--secondary);
     border-radius: 2rem;
     overflow: hidden;
   }

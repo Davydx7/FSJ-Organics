@@ -1,26 +1,37 @@
 nav {
 	position: sticky;
 	top: 2rem;
+	width: 100%;
 
 	ul{
 		display: flex;
 		justify-content: center;
-		gap: 3rem;
+		gap: 3vw;
 		padding: 0.5rem;
 	}
-
-	li {
-		list-style: none;
+	
+	a {
 		padding: 0.3rem 1rem;
-		background-color: white;
+		border: 0.1rem solid var(--tertiary);
+		font-size: 0.8rem;
+		font-weight: 600;
+		background-color: var(--secondary);
 		border-radius: 2rem;
-	}
+		position : relative;
+		color: var(--tertiary);
+		text-decoration: none;
 
-	li::after{
-		content: '';
-		display: block;
-		height: 0.25rem;
-		width: 100%;
-		background-color: burlywood;
+		// &:hover {
+
+		// }
+
+		// &:visited {
+
+		// }
+
+		&.active {
+			color: var(--secondary);
+			background-color: var(--tertiary);
+		}
 	}
 }
