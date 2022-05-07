@@ -14,7 +14,7 @@ const Products: React.FC = () => {
 	return (
 		<main className="products">
 			<div>
-				<input type="text" onChange={filterProducts} />
+				<input type="text" onChange={filterProducts} placeholder="search by name" />
 			</div>
 			<section>
 				{mappedProducts.length ?

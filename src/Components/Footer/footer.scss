@@ -1,0 +1,26 @@
+footer {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	// justify-content: space-around;
+	position: absolute;
+	bottom: 0;
+	background-color: var(--primary);
+	padding: 1rem;
+
+	ul {
+		display: flex;
+		justify-content: space-around;
+		margin-bottom: 0.5rem;
+
+		li {
+			list-style: none;
+		}
+	}
+
+	p {
+		color: var(--secondary);
+	}
+
+
+}

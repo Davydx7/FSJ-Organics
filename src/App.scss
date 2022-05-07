@@ -1,24 +1,37 @@
 .App {
   padding: 1rem 1vw;
   text-align: center;
-  background-color: grey;
+  background-color: var(--bg);
   min-height: 100vh;
   color: var(--text);
   display: flex;
-
+  transition: all 0.3s ease-out;
   // overflow-y: scroll;
   // overflow-x: hidden;
 
   
   .container {
     margin: 0 5rem;
+    padding-bottom: 6rem;
     width: 100%;
     background-color: var(--secondary);
     border-radius: 2rem;
     overflow: hidden;
+	  transition: all 0.3s ease-out;
+    position: relative;
   }
 }
 
+@media screen and (max-width: 768px) {
+  .App {
+    padding: 0;
+
+    .container {
+      margin: 0;
+      border-radius: 0;
+    }
+  }
+}
 // @supports (scrollbar-gutter: stable) {
 //   .App {
 //     overflow-y: auto;

@@ -9,10 +9,16 @@ header {
 		color: white;
 		font-size: 2rem;
 		font-weight: 700;
-		// -webkit-text-stroke: 1px var(--tertiary);
+		transition: all 0.3s ease-out;
+		text-shadow: 2px 2px 8px hsla(0, 0%, 17%, 0.25);
 	}
-
+	
 	svg {
 		width: 3rem;
+		transition: all 0.3s ease-out;
+	}
+
+	svg:hover {
+		transform: scale(1.1);
 	}
 }

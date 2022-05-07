@@ -2,8 +2,8 @@ import Button from "../../Components/Button"
 import ReviewCard from "../../Components/ReviewCard"
 import useReviews from "../../Stores/reviewStore"
 
-import hero from "../../Assets/images/hero.png"
 import './home.scss'
+import { Link } from "react-router-dom"
 // import {ReactComponent as Hero} from ''
 
 const Home = () => {
@@ -13,11 +13,20 @@ const Home = () => {
 		<main className="Home">
 			<section className="hero">
 				<div className="herotext">
-					<h1>Your Skin deserves the Best!</h1>
+					<h1>Your Skin
+						<br />
+						Deserves the 
+						<br />
+						Best!
+					</h1>
 					<p>Let your skin speak before you do.</p>
-					<Button />
+					<Link to="/products">
+						<Button>
+							Shop Now!
+						</Button>
+					</Link>
 				</div>
-				<img src={hero} alt="hero" />
+				{/* <img src={hero} alt="hero" /> */}
 			</section>
 			<section className="reviews">
 				<ul>

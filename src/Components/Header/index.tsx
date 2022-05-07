@@ -3,9 +3,12 @@ import { Link } from 'react-router-dom';
 import Button from '../Button';
 import useTheme from '../../Stores/themeStore';
 import {ReactComponent as Logo} from '../../Assets/SVG/logo.svg';
+import {ReactComponent as Moon} from '../../Assets/SVG/moon.svg';
+import {ReactComponent as Sun} from '../../Assets/SVG/sun.svg';
 
 const Header = () => {
 	const changeTheme = useTheme(state => state.changeTheme);
+	const theme = useTheme(state => state.theme);
 
 	return (
 		<header>
@@ -14,7 +17,11 @@ const Header = () => {
 			</Link>
 			<h1>Flawless Skincare By Jade</h1>
 			<Button onclick={changeTheme}>
-				Change Theme
+			{theme === 'light' ? (
+				<Moon />
+				) : (
+				<Sun />
+			)}
 			</Button>
 		</header>
 	)

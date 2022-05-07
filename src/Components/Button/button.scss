@@ -1,0 +1,16 @@
+button {
+	display: inline-block;
+	color: var(--secondary);
+	background-color: var(--tertiary);
+	border: 0.1rem solid transparent;
+	border-radius: 50rem;
+	padding: 0.5rem 2rem;
+	font-size: 1.5rem;
+	box-shadow: 2px 2px 4px hsla(0, 0%, 17%, 0.25);
+	transition: all 0.3s ease-out;
+
+	&:hover {
+		transform: translate(0, -2px);
+		box-shadow: 4px 4px 8px hsla(0, 0%, 17%, 0.35);
+	}
+}
