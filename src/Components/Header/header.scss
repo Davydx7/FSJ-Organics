@@ -4,18 +4,26 @@ header {
 	align-items: center;
 	height: 5rem;
 	background-color: var(--primary);
+	padding: 0.5rem 1rem;
 
 	h1 {
 		color: white;
-		font-size: 2rem;
+		font-size: 1.875rem;
 		font-weight: 700;
 		transition: all 0.3s ease-out;
 		text-shadow: 2px 2px 8px hsla(0, 0%, 17%, 0.25);
 	}
 	
 	svg {
-		width: 3rem;
+		width: 1rem;
+		height: 1rem;
+		// aspect-ratio: 1;
 		transition: all 0.3s ease-out;
+	}
+
+	.logo {
+		width: 3rem;
+		height: 3rem;
 	}
 
 	svg:hover {

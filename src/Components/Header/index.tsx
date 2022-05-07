@@ -13,7 +13,7 @@ const Header = () => {
 	return (
 		<header>
 			<Link to="/">
-				<Logo />
+				<Logo className='logo'/>
 			</Link>
 			<h1>Flawless Skincare By Jade</h1>
 			<Button onclick={changeTheme}>

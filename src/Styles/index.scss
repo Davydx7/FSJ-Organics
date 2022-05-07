@@ -7,10 +7,15 @@
   box-sizing:border-box; 
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  // font-size: 1.6rem;
   color: var(--text);
 }
 
@@ -29,4 +34,10 @@ body::-webkit-scrollbar {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 100%;
+  }
 }
