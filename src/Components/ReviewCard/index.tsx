@@ -4,7 +4,7 @@ import { Props } from "./typings"
 const ReviewCard : React.FC<Props> = ({name, img, alt, description, review, likes, id}) => {
 	return (
 		<div className="reviewCard">
-			<div>
+			<div className='image'>
 				<img src={img} alt={alt} />
 			</div>
 			<p>{name}</p>

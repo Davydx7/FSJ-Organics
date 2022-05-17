@@ -1,5 +1,4 @@
 .App {
-  padding: 1rem 1vw;
   text-align: center;
   background-color: var(--bg);
   min-height: 100vh;
@@ -9,29 +8,28 @@
   // overflow-y: scroll;
   // overflow-x: hidden;
 
-  
   .container {
-    margin: 0 5rem;
     padding-bottom: 6rem;
     width: 100%;
+    max-width: 1440px;
     background-color: var(--secondary);
-    border-radius: 2rem;
     overflow: hidden;
 	  transition: all 0.3s ease-out;
     position: relative;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1024px) {
   .App {
-    padding: 0;
+    padding: 1rem 1vw;
 
     .container {
-      margin: 0;
-      border-radius: 0;
+      margin: 0 auto;
+      border-radius: 2rem;
     }
   }
 }
+
 // @supports (scrollbar-gutter: stable) {
 //   .App {
 //     overflow-y: auto;

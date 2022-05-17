@@ -1,5 +1,8 @@
 main {
 	width: 100%;
+	// display: flex;
+	// flex-direction: column;
+	align-items: stretch;
 	.hero {
 		// display: flex;
 		// justify-content: space-between;
@@ -37,5 +40,14 @@ main {
 			color: var(--tertiary);
 			margin-bottom: 1rem;
 		}
+	}
+
+	.reviews {
+		display: grid;
+		padding: 2rem;
+		grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+		gap: 1rem;
+		text-align: left;
+		justify-items: center;
 	}
 }

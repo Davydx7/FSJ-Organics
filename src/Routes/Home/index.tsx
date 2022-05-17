@@ -15,7 +15,7 @@ const Home = () => {
 				<div className="herotext">
 					<h1>Your Skin
 						<br />
-						Deserves the 
+						Deserves the
 						<br />
 						Best!
 					</h1>
@@ -29,13 +29,11 @@ const Home = () => {
 				{/* <img src={hero} alt="hero" /> */}
 			</section>
 			<section className="reviews">
-				<ul>
-					{// map through reviews	and display them	in a list	with a button to view the review
-					}
-					{reviews.map((review: any) => (
-						<ReviewCard key={review.id} {...review} />
-					))}
-				</ul>
+				{// map through reviews	and display them	in a list	with a button to view the review
+				}
+				{reviews.map((review: any) => (
+					<ReviewCard key={review.id} {...review} />
+				))}
 			</section>
 		</main>
 	)
