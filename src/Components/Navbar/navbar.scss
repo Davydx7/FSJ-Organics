@@ -1,15 +1,30 @@
 nav {
 	position: sticky;
-	top: 2rem;
+	top: 0;
 	width: 100%;
+	z-index: 1;
+	backface-visibility: hidden;
+	// overflow: hidden;
+
+	&::before {
+		content: '';
+		display: block;
+		position: sticky;
+		height: 1rem;
+		top: 2rem;
+		box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+		z-index: -1;
+	}
 
 	ul{
+		margin-top: -1rem;
 		display: flex;
 		justify-content: center;
 		gap: 2vw;
 		padding: 0.5rem;
+		background-color: var(--secondary);
 	}
-	
+
 	a {
 		padding: 0.3rem 1rem;
 		border: 0.1rem solid transparent;
@@ -21,7 +36,7 @@ nav {
 		color: var(--tertiary);
 		text-decoration: none;
 		transition: all 0.3s ease-out;
-		
+
 		&:hover {
 			border: 0.1rem solid var(--tertiary);
 			transform: scale(1.1);
