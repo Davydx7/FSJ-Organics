@@ -1,16 +1,24 @@
 import './reviewCard.scss'
 import { Props } from "./typings"
+import { ReactComponent as Likes } from '../../Assets/SVG/likes.svg'
 
 const ReviewCard : React.FC<Props> = ({name, img, alt, description, review, likes, id}) => {
 	return (
 		<div className="reviewCard">
-			<div className='image'>
-				<img src={img} alt={alt} />
+			<div className='head'>
+				<img className='image' src={img} alt={alt} />
+				<div className='info'>
+					<p>{name}</p>
+					<span>{description}</span>
+				</div>
 			</div>
-			<p>{name}</p>
-			<p>{description}</p>
-			<p>{review}</p>
-			<p>{likes}</p>
+			<div className='body'>
+				<p>{review}</p>
+				<div>
+					<Likes className='likes' />
+					{likes}
+				</div>
+			</div>
 		</div>
 	)
 }

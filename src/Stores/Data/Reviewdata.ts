@@ -3,7 +3,7 @@ import { ReviewData } from "../typings";
 const data: ReviewData[] = [
 	 {
 		 name: 'Cleanser',
-		 description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.',
+		 description: 'Lorem ipsum dolor',
 		 img: 'https://via.placeholder.com/150',
 		 alt: 'This is a skincare product',
 		 review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.',
@@ -12,7 +12,7 @@ const data: ReviewData[] = [
 	 },
 	 {
 		 name: 'Pimples Off',
-		 description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.',
+		 description: 'Lorem ipsum dolor',
 		 img: 'https://via.placeholder.com/150',
 		 alt: 'This is a skincare product',
 		 review: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.',
@@ -21,7 +21,7 @@ const data: ReviewData[] = [
 	 },
 	 {
 		 name: 'Shower Gel',
-		 description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.',
+		 description: 'Lorem ipsum dolor',
 		 img: 'https://via.placeholder.com/150',
 		 alt: 'This is a skincare product',
 		 review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.',
@@ -30,7 +30,7 @@ const data: ReviewData[] = [
 	 },
 	 {
 		 name: 'Face Soap',
-		 description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.',
+		 description: 'Lorem ipsum dolor',
 		 img: 'https://via.placeholder.com/150',
 		 alt: 'This is a skincare product',
 		 review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.',
@@ -39,7 +39,7 @@ const data: ReviewData[] = [
 	 },
 	 {
 		 name: 'Raspberry Soap',
-		 description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.',
+		 description: 'Lorem ipsum dolor',
 		 img: 'https://via.placeholder.com/150',
 		 alt: 'This is a skincare product',
 		 review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.',
@@ -48,7 +48,7 @@ const data: ReviewData[] = [
 	 },
 	 {
 		 name: 'Carrot Oil',
-		 description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.',
+		 description: 'Lorem ipsum dolor',
 		 img: 'https://via.placeholder.com/150',
 		 alt: 'This is a skincare product',
 		 review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.',

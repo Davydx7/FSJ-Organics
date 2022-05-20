@@ -11,11 +11,29 @@ html {
   font-size: 62.5%;
 }
 
+// @media screen and (min-width: 576px) {
+//   html {
+//     font-size: 75%;
+//   }
+// }
+
+// @media screen and (min-width: 768px) {
+//   html {
+//     font-size: 87.5%;
+//   }
+// }
+
+// @media screen and (min-width: 1024px) {
+//   html {
+//     font-size: 100%;
+//   }
+// }
+
 body {
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  // font-size: 1.6rem;
+  font-size: 1.6rem;
   color: var(--text);
 }
 
@@ -36,20 +54,3 @@ code {
     monospace;
 }
 
-@media screen and (min-width: 576px) {
-  html {
-    font-size: 75%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  html {
-    font-size: 87.5%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  html {
-    font-size: 100%;
-  }
-}
