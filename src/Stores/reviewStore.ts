@@ -1,9 +1,9 @@
 import create from 'zustand'
-import data from './Data/Reviewdata'
+import reviewData from './Data/Reviewdata'
 import { ReviewStore } from './typings'
 
 const useReviews = create<ReviewStore>((set) => ({
-  reviews: data,
+  reviews: reviewData,
 }))
 
 export default useReviews

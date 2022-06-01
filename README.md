@@ -23,8 +23,14 @@ It is a website that is designed to be a one-stop shop for all of the FSJ Organi
 
 ## Packages
 
-- react router
+- react-router
+- react-query
+- axios
 - zustand
 - normalize.css
 - sass
 - typescript
+
+## To be implemented
+
+- relative paths

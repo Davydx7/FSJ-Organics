@@ -1,6 +1,6 @@
 import { ProductData } from "../typings";
 
-const data: ProductData[] = [
+const productData: ProductData[] = [
 	 {
 		 name: 'Cleanser',
 		 description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.',
@@ -57,4 +57,4 @@ const data: ProductData[] = [
 	 },
 ];
 
-export default data;
+export default productData;

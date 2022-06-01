@@ -18,6 +18,18 @@ export type ReviewData = {
   id: number;
 }
 
+export type unsplashData = {
+    id: number;
+    width: number;
+    height: number;
+    urls: { large: string; regular: string; raw: string; small: string };
+    color: string | null;
+    user: {
+      username: string;
+      name: string;
+    };
+}
+
 export type ProductStore = {
   products: ProductData[];
   deleteOne: () => void

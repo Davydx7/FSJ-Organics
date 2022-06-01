@@ -1,9 +1,9 @@
 import create from 'zustand'
-import data from './Data/Productdata'
+import productData from './Data/Productdata'
 import { ProductStore } from './typings'
 
 const useProducts = create<ProductStore>((set) => ({
-  products: data,
+  products: productData,
   deleteOne() {
     set(state => {
       let newState = { ...state }
@@ -15,7 +15,7 @@ const useProducts = create<ProductStore>((set) => ({
     set((state) => {
       let searchTerm = e.currentTarget.value
       let newState = { ...state }
-      newState.products = data.filter(product => {
+      newState.products = productData.filter(product => {
         //search only by name, description and price will be implemented later
         return product.name.toLowerCase().includes(searchTerm.toLowerCase())
       })

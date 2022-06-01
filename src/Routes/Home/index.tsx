@@ -4,10 +4,12 @@ import useReviews from "../../Stores/reviewStore"
 
 import './home.scss'
 import { Link } from "react-router-dom"
-// import {ReactComponent as Hero} from ''
+import useUnsplash from "../../Stores/Data/unsplashData"
 
 const Home = () => {
 	const reviews = useReviews((state: any) => state.reviews)
+
+	const {data} = useUnsplash()
 
 	return (
 		<main className="Home">
@@ -31,8 +33,8 @@ const Home = () => {
 			<section className="reviews">
 				{// map through reviews	and display them	in a list	with a button to view the review
 				}
-				{reviews.map((review: any) => (
-					<ReviewCard key={review.id} {...review} />
+				{data && reviews.map((review: any, i) => (
+					<ReviewCard key={review.id} {...review} img={data[i].urls.regular} />
 				))}
 			</section>
 		</main>
