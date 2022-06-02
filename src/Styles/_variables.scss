@@ -1,8 +1,8 @@
 // COLORS
 :root {
-	--primary: hsl(99, 78%, 48%);
+	--primary: hsl(110, 88%, 27%);
 	--secondary: #fafafa;
-	--tertiary: #F11249;
+	--tertiary: #d40e3f;
 	--text: #1a1a1a;
 	--bg: #e7e2e2;
 	// Font weights
@@ -10,12 +10,12 @@
 	--normal: 400;
 	--semibold: 500;
 	--bold: 700;
-	
+
 	// Font size
 	--small: 0.875rem;
 	--normal: 1rem;
 	--large: 1.25rem;
-	
+
 	//Breakpoints
 	--mobile: 600px;
 	--tablet: 768px;
@@ -23,9 +23,9 @@
 }
 
 [data-theme="dark"] {
-	--primary: hsl(99, 78%, 38%);
+	--primary: hsl(99, 66%, 46%);
 	--secondary: #1a1a1a;
-	--tertiary: hsl(345, 89%, 41%);
+	--tertiary: hsl(345, 95%, 59%);
 	--text: #f5f5f5;
 	--bg: #2e2e2e;
 }

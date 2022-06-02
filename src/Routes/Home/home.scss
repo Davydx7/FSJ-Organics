@@ -36,9 +36,13 @@ main {
 
 		p {
 			font-size: 1.5rem;
+			width: fit-content;
+			border-radius: 2rem;
 			font-weight: 500;
 			color: var(--tertiary);
 			margin-bottom: 1rem;
+			padding: 0.1rem .5rem 0.1rem 0;
+			background-color: var(--secondary);
 		}
 	}
 

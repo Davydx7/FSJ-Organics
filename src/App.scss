@@ -11,11 +11,13 @@
   .container {
     padding-bottom: 6rem;
     width: 100%;
-    max-width: 1440px;
+    margin: 0 auto;
+    max-width: 1024px;
     background-color: var(--secondary);
     // overflow: hidden;
 	  transition: all 0.3s ease-out;
     position: relative;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
   }
 }
 
