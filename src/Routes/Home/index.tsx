@@ -6,7 +6,6 @@ import './home.scss';
 import { Link } from 'react-router-dom';
 import useUnsplash from '../../Stores/Data/unsplashData';
 import { useFadeIn, useScrollToTop } from '../../Hooks';
-import { useRef } from 'react';
 
 function Home() {
   const fadeIn = useFadeIn();
