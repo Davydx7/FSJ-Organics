@@ -26,7 +26,7 @@ nav {
 	}
 
 	a {
-		padding: 0.3rem 1rem;
+		padding: 0.1rem 1rem;
 		border: 0.1rem solid transparent;
 		font-size: 1.2rem;
 		font-weight: 600;
@@ -35,7 +35,7 @@ nav {
 		position : relative;
 		color: var(--tertiary);
 		text-decoration: none;
-		transition: all 0.3s ease-out;
+		transition: all 0.2s ease-out;
 
 		&:hover {
 			border: 0.1rem solid var(--tertiary);

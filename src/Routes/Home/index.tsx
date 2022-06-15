@@ -5,14 +5,18 @@ import useReviews from "../../Stores/reviewStore"
 import './home.scss'
 import { Link } from "react-router-dom"
 import useUnsplash from "../../Stores/Data/unsplashData"
+import { useFadeIn, useScrollToTop } from "../../Hooks"
+import { useRef } from "react"
 
 const Home = () => {
-	const reviews = useReviews((state: any) => state.reviews)
+	const fadeIn = useFadeIn();
+	useScrollToTop();
 
-	const {data} = useUnsplash()
+	const reviews = useReviews((state: any) => state.reviews);
+	const {data} = useUnsplash('female portrait', 6);
 
 	return (
-		<main className="Home">
+		<main className="Home" ref={fadeIn}>
 			<section className="hero">
 				<div className="herotext">
 					<h1>Your Skin

@@ -15,7 +15,7 @@ const Header = () => {
 			<Link to="/">
 				<Logo className='logo'/>
 			</Link>
-			<h1>Flawless Skincare By Jade</h1>
+			<h1>Flawless Skincare </h1>
 			<Button onclick={changeTheme}>
 			{theme === 'light' ? (
 				<Moon />

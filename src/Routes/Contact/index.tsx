@@ -1,6 +1,11 @@
+import { useFadeIn, useScrollToTop } from "../../Hooks"
+
 const Contact = () => {
+	useScrollToTop()
+	const fadeIn = useFadeIn();
+
 	return (
-		<main>
+		<main ref={fadeIn}>
 			<section className="socials">
 				<div className="whatsapp">Whatsapp</div>
 				<div className="whatsapp">Instagram</div>

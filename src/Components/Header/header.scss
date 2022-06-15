@@ -1,6 +1,7 @@
 header {
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
+	gap: 1rem;
 	align-items: center;
 	height: 5rem;
 	background-color: var(--primary);
@@ -13,12 +14,19 @@ header {
 		transition: all 0.3s ease-out;
 		text-shadow: 2px 2px 8px hsla(0, 0%, 17%, 0.25);
 	}
-	
+
+	.button{
+		position: fixed;
+		top: 30px;
+		right: 15px;
+		z-index: 5;
+	}
+
 	svg {
 		width: 1rem;
 		height: 1rem;
 		// aspect-ratio: 1;
-		transition: all 0.3s ease-out;
+		transition: all 0.2s ease-out;
 	}
 
 	.logo {

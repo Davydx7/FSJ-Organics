@@ -1,0 +1,50 @@
+.productCard {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	border-radius: 1rem;
+	overflow: hidden;
+	// border: 1px solid var(--primary);
+	border-radius: 0.5rem;
+	transition: all 0.2s ease-out;
+	background-color: var(--off);
+	box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
+
+	&:hover {
+		// border: 1px solid var(--tertiary);
+		transform: scale(1.03);
+	}
+
+	img{
+		width: 100%;
+		height: 10rem;
+		object-fit: cover;
+	}
+
+	.name {
+		font-size: 1.2rem;
+		font-weight: 600;
+		color: var(--tertiary);
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+	.description{
+		padding: 0 1rem;
+		font-size: 1.3rem;
+		line-height: 1.3;
+		text-align: left;
+	}
+
+	.foot {
+		padding: 0.5rem 1rem;
+		display: flex;
+		justify-content: space-between;
+		font-weight: bold;
+	}
+
+	button {
+		margin: 0 auto 1rem;
+		width: 60%;
+	}
+}

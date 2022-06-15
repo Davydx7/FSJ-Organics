@@ -4,7 +4,8 @@
   min-height: 100vh;
   color: var(--text);
   display: flex;
-  transition: all 0.3s ease-out;
+  transition: all 0.2s ease-out;
+
   // overflow-y: scroll;
   // overflow-x: hidden;
 
@@ -15,7 +16,7 @@
     max-width: 1024px;
     background-color: var(--secondary);
     // overflow: hidden;
-	  transition: all 0.3s ease-out;
+	  transition: all 0.2s ease-out;
     position: relative;
     box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
   }

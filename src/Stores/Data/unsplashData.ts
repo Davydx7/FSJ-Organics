@@ -20,19 +20,21 @@ const unsplash = createApi({
   accessKey: `${API_KEY}`
 });
 
-function splash(){
+function splash({queryKey}){
+  const[, query, num] = queryKey;
+
    return unsplash.search.getPhotos({
-    query: 'female portrait',
-    perPage: 6
+      query: query,
+      perPage: num
+      })
+      .then(result => {
+        console.log(result.response?.results)
+        return result.response?.results
     })
-    .then(result => {
-      console.log(result.response?.results)
-      return result.response?.results
-  })
 }
 
-export default function useUnsplash(){
-  return useQuery<any, Error>('unsplash', splash, {
+export default function useUnsplash(query, num){
+  return useQuery<any, Error>(['unsplash', query, num], splash, {
     staleTime: Infinity,
     cacheTime: Infinity,
   })
