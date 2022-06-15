@@ -1,5 +1,5 @@
 import { useQuery } from 'react-query';
-import { createApi } from 'unsplash-js'
+import { createApi } from 'unsplash-js';
 // import { unsplashData } from '../typings';
 
 // type Photo = {
@@ -14,28 +14,28 @@ import { createApi } from 'unsplash-js'
 //   };
 // };
 
-const API_KEY  = process.env.REACT_APP_UNSPLASH_API_KEY
+const API_KEY = process.env.REACT_APP_UNSPLASH_API_KEY;
 
 const unsplash = createApi({
-  accessKey: `${API_KEY}`
+  accessKey: `${API_KEY}`,
 });
 
-function splash({queryKey}){
-  const[, query, num] = queryKey;
+function splash({ queryKey }) {
+  const [, query, num] = queryKey;
 
-   return unsplash.search.getPhotos({
-      query: query,
-      perPage: num
-      })
-      .then(result => {
-        console.log(result.response?.results)
-        return result.response?.results
-    })
+  return unsplash.search.getPhotos({
+    query,
+    perPage: num,
+  })
+    .then((result) => {
+      console.log(result.response?.results);
+      return result.response?.results;
+    });
 }
 
-export default function useUnsplash(query, num){
+export default function useUnsplash(query, num) {
   return useQuery<any, Error>(['unsplash', query, num], splash, {
     staleTime: Infinity,
     cacheTime: Infinity,
-  })
+  });
 }

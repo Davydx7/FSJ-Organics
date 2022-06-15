@@ -1,4 +1,4 @@
-import { ReviewData } from "../typings";
+import { ReviewData } from '../typings';
 
 const reviewData: ReviewData[] = [
 	 {

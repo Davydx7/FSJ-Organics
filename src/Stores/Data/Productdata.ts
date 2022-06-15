@@ -1,4 +1,4 @@
-import { ProductData } from "../typings";
+import { ProductData } from '../typings';
 
 const productData: ProductData[] = [
 	 {

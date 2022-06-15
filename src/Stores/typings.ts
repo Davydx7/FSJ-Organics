@@ -44,4 +44,3 @@ export type ThemeStore = {
   theme: string;
   changeTheme: () => void;
 }
-

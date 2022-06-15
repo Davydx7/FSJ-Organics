@@ -7,15 +7,15 @@ import Header from './Components/Header';
 import Navbar from './Components/Navbar';
 import useTheme from './Stores/themeStore';
 
-const queryClient = new QueryClient()
+const queryClient = new QueryClient();
 
 function App() {
-  const theme = useTheme(state => state.theme);
+  const theme = useTheme((state) => state.theme);
 
   return (
-    <QueryClientProvider client={queryClient} >
+    <QueryClientProvider client={queryClient}>
       <div className="App" data-theme={theme}>
-        <div className='container'>
+        <div className="container">
           <Header />
           <Navbar />
           <Outlet />

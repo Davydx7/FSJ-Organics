@@ -1,4 +1,6 @@
-import { useState, useEffect, useLayoutEffect, useRef } from "react";
+import {
+  useLayoutEffect, useRef,
+} from 'react';
 
 // export const useScrollPosition = () => {
 // 	const [scroll, setScroll] = useState(0);
@@ -19,36 +21,31 @@ import { useState, useEffect, useLayoutEffect, useRef } from "react";
 // }
 
 export const useScrollToTop = () => {
-	window.scrollTo(0,50);
-}
+  window.scrollTo(0, 50);
+};
 
 export const useFadeIn = () => {
-	const ref = useRef<HTMLElement>(null);
+  const ref = useRef<HTMLElement>(null);
 
-	useLayoutEffect(() => {
-		if (ref.current) {
-			console.log('mounted')
+  useLayoutEffect(() => {
+    const element = ref.current
 
-			ref.current.style.opacity = '0';
-			console.log(ref.current.style.opacity);
+    if (element) {
+      element.style.opacity = '0';
 
-			setTimeout(() => {
-				if (ref.current) {
-					ref.current.style.transition = 'all 0.2s ease-out';
-					ref.current.style.opacity = '1';
-					console.log('set to 1');
-				}
-			})
-		}
-		return () => {
-			if (ref.current) {
-				ref.current.style.transition = '';
-				console.log( 'unmounted')
-				console.log(ref.current.style.transition)
-			}
-		}
-	}, []);
+      setTimeout(() => {
+        if (element) {
+          element.style.transition = 'all 0.2s ease-out';
+          element.style.opacity = '1';
+        }
+      });
+    }
+    return () => {
+      if (element) {
+        element.style.transition = '';
+      }
+    };
+  }, []);
 
-
-	return ref;
-}
+  return ref;
+};
