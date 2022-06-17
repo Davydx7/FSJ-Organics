@@ -10,10 +10,16 @@ const Products: React.FC = () => {
   useScrollToTop();
   const fadeIn = useFadeIn();
 
-  const { data } = useUnsplash('skincare products', 6);
+  const { data } = useUnsplash('skincare cream and oils', 30);
 
   const products = useProducts((state: ProductStore) => state.products);
   const filterProducts = useProducts((state) => state.search);
+
+  let length;
+
+  if (data) {
+    length = products.map((product: any, i) => <ProductCard key={product.id} {...product} img={data[i].urls.regular} />).length
+  }
 
   return (
     <main className="products" ref={fadeIn}>
@@ -22,14 +28,30 @@ const Products: React.FC = () => {
         <input type="text" onChange={filterProducts} placeholder="search by name" />
       </div>
       <section>
-        {data
-          ?						products.map((product: any, i) => <ProductCard key={product.id} {...product} img={data[i].urls.regular} />)
-				  : (
-  <div>
-    <h2>No products matches your search</h2>
-    <p>Please try searching another term</p>
-  </div>
-				  )}
+        {!data ?	(
+            <div>
+              <h2 style={{
+                // fontSize: "5rem",
+                // fontWeight: "bold"
+              }}>No products to display</h2>
+              <p>Check your connection and reload</p>
+            </div>
+          )
+          : length ?
+          (
+            products.map((product: any, i) => <ProductCard key={product.id} {...product} img={data[i].urls.regular} />)
+				  )
+          : (
+            <div>
+              <h2 style={{
+                // fontSize: "5rem",
+                // fontWeight: "bold"
+               }} >No products matched your Search</h2>
+              <p>Try searching for a different term</p>
+            </div>
+
+          )
+        }
       </section>
     </main>
   );

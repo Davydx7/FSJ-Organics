@@ -4,11 +4,11 @@ header {
 	gap: 1rem;
 	align-items: center;
 	height: 5rem;
-	background-color: var(--primary);
+	background-color: var(--off);
 	padding: 0.5rem 1rem;
 
 	h1 {
-		color: white;
+		color: var(--primary);
 		font-size: 1.875rem;
 		font-weight: 700;
 		transition: all 0.3s ease-out;
@@ -19,7 +19,7 @@ header {
 		position: fixed;
 		top: 30px;
 		right: 15px;
-		z-index: 5;
+		z-index: 99;
 	}
 
 	svg {
