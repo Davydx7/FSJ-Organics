@@ -14,7 +14,7 @@ function Contact() {
     console.log(data);
 
     const name = data.name + ' from skincare website contact';
-    const email = data.email;
+    // const email = data.email;
     const message = data.message;
 
     // const body = `Name: ${name} \nEmail: ${email} \nMessage: ${message}`;
