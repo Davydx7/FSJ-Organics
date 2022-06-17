@@ -19,7 +19,7 @@ function App() {
     if (localStorage.getItem('theme') === 'dark') {
       changeTheme();
     }
-  }, []);
+  });
 
 
   return (
