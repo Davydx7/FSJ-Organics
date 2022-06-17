@@ -2,7 +2,7 @@ import { useFadeIn, useScrollToTop } from '../../Hooks';
 import { useForm } from 'react-hook-form';
 
 import './contact.scss'
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 function Contact() {
   useScrollToTop();
@@ -33,10 +33,10 @@ function Contact() {
     <main ref={fadeIn} className="contact">
       <p>Contact Dev:</p>
       <section className="socials">
-        <a href='https://github.com/Davydx7' target="_blank" className="github">Github</a>
-        <a href='https://twitter.com/olufemi_david11' target="_blank" className="twitter">Twitter</a>
-        <a href='https://www.linkedin.com/in/davidolufemi/' target="_blank" className="linkedin">Linkedin</a>
-        <a href='mailto:oludave0511@gmail.com' target="_blank" className="email">Email</a>
+        <a href='https://github.com/Davydx7' target="_blank" rel="noreferrer" className="github">Github</a>
+        <a href='https://twitter.com/olufemi_david11' target="_blank" rel="noreferrer" className="twitter">Twitter</a>
+        <a href='https://www.linkedin.com/in/davidolufemi/' target="_blank" rel="noreferrer" className="linkedin">Linkedin</a>
+        <a href='mailto:oludave0511@gmail.com' target="_blank" rel="noreferrer" className="email">Email</a>
       </section>
       <form onSubmit={handleSubmit(onSubmit)}>
         <p>Reach Out</p>
