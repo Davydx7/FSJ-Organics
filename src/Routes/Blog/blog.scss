@@ -1,6 +1,9 @@
 .blog {
-
-	padding: 10rem 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	// padding: 10rem 0;
 	h2 {
 		font-size: 2rem;
 		margin-top: 2rem;
@@ -9,5 +12,34 @@
 	p {
 		font-size: 4rem;
 		color: var(--primary);
+	}
+
+	.fun {
+		display: flex;
+		flex-wrap: wrap;
+		// gap: 1rem;
+	}
+
+	.funel {
+		flex: 1 1 auto;
+		width: 8px;
+		height: 8px;
+		border-radius: 100%;
+		background-color: transparent;
+		transition: 5s;
+		border: 1px solid var(--primary);
+
+		&:hover:nth-child(odd) {
+			transform: translate(20px, 50px);
+			background-color: var(--tertiary);
+			box-shadow: 0 0 20px 10px var(--tertiary);
+			transition: 0s;
+		}
+		&:hover:nth-child(even) {
+			transform: translate(-20px, -50px);
+			background-color: var(--primary);
+			box-shadow: 0 0 20px 10px var(--primary);
+			transition: 0s;
+		}
 	}
 }
