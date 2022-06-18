@@ -16,10 +16,11 @@ function App() {
   const theme = useTheme((state) => state.theme);
 
   useLayoutEffect(() => {
+    console.log('useEffect');
     if (localStorage.getItem('theme') === 'dark') {
       changeTheme();
     }
-  });
+  }, [changeTheme]);
 
 
   return (
