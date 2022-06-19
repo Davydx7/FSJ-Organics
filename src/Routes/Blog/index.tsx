@@ -12,7 +12,7 @@ function Blog() {
     let fundiv = fun.current;
 
     if (fundiv) {
-      const child = '<div class="funel"></div>'.repeat(4000);
+      const child = '<i></i>'.repeat(2000);
 
       fundiv.innerHTML += child;
     }

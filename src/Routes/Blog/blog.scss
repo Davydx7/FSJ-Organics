@@ -20,7 +20,7 @@
 		// gap: 1rem;
 	}
 
-	.funel {
+	i {
 		flex: 1 1 auto;
 		width: 8px;
 		height: 8px;
@@ -30,13 +30,13 @@
 		border: 1px solid var(--primary);
 
 		&:hover:nth-child(odd) {
-			transform: translate(20px, 50px);
+			transform: translate(40px, 100px);
 			background-color: var(--tertiary);
 			box-shadow: 0 0 20px 10px var(--tertiary);
 			transition: 0s;
 		}
 		&:hover:nth-child(even) {
-			transform: translate(-20px, -50px);
+			transform: translate(-40px, -100px);
 			background-color: var(--primary);
 			box-shadow: 0 0 20px 10px var(--primary);
 			transition: 0s;
