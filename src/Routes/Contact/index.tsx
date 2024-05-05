@@ -11,7 +11,6 @@ function Contact() {
   const { register, handleSubmit, formState:{errors} } = useForm({mode:'onBlur' ,defaultValues:{name:'', email:'', message:''}});
 
   const onSubmit = (data) => {
-    console.log(data);
 
     const name = data.name + ' from skincare website contact';
     // const email = data.email;

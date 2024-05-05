@@ -6,7 +6,6 @@ function Blog() {
   useScrollToTop();
   const fadeIn = useFadeIn();
   const fun = useRef<HTMLDivElement>(null);
-  // console.log();
 
   useLayoutEffect(() => {
     let fundiv = fun.current;

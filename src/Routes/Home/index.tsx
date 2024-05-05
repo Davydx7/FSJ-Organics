@@ -37,8 +37,8 @@ function Home() {
       <section className="reviews">
         {// map through reviews	and display them	in a list	with a button to view the review
 				}
-        {data && reviews.map((review: any, i) => (
-          <ReviewCard key={review.id} {...review} img={data[i].urls.regular} />
+        {reviews.map((review: any, i) => (
+          <ReviewCard key={review.id} {...review} img={data ? data[i].urls.regular : ''} />
         ))}
       </section>
     </main>

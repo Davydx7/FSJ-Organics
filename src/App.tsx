@@ -1,6 +1,6 @@
 import { useLayoutEffect } from 'react';
-import { QueryClient, QueryClientProvider } from 'react-query';
-import { ReactQueryDevtools } from 'react-query/devtools';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 import { Outlet } from 'react-router-dom';
 import './App.scss';
 import Footer from './Components/Footer';
@@ -16,7 +16,6 @@ function App() {
   const theme = useTheme((state) => state.theme);
 
   useLayoutEffect(() => {
-    console.log('useEffect');
     if (localStorage.getItem('theme') === 'dark') {
       changeTheme();
     }

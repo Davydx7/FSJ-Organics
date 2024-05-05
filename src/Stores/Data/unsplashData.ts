@@ -1,4 +1,4 @@
-import { useQuery } from 'react-query';
+import { useQuery } from '@tanstack/react-query';
 import { createApi } from 'unsplash-js';
 // import { unsplashData } from '../typings';
 
@@ -28,14 +28,17 @@ function splash({ queryKey }) {
     perPage: num,
   })
     .then((result) => {
-      console.log(result.response?.results);
       return result.response?.results;
-    });
+    }).catch((error) => {
+      throw new Error(error);
+    })
 }
 
 export default function useUnsplash(query, num) {
-  return useQuery<any, Error>(['unsplash', query, num], splash, {
+  return useQuery<any, Error>({
+    queryKey: ['unsplash', query, num],
+    queryFn: splash,
     staleTime: Infinity,
-    cacheTime: Infinity,
+    gcTime: Infinity,
   });
 }

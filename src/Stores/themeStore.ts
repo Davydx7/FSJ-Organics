@@ -7,11 +7,9 @@ const useTheme = create<ThemeStore>((set) => ({
     set((state) => {
       if (state.theme === 'light') {
         localStorage.setItem('theme', 'dark');
-        console.log('dark');
         return { theme: 'dark' };
       } else {
         localStorage.setItem('theme', 'light');
-        console.log('light');
         return { theme: 'light' };
       }
     });
