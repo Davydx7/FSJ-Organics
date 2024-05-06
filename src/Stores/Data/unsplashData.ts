@@ -20,25 +20,26 @@ const unsplash = createApi({
   accessKey: `${API_KEY}`,
 });
 
-function splash({ queryKey }) {
-  const [, query, num] = queryKey;
-
+function splash(query, num) {
   return unsplash.search.getPhotos({
     query,
     perPage: num,
   })
     .then((result) => {
       return result.response?.results;
-    }).catch((error) => {
+    })
+    .catch((error) => {
       throw new Error(error);
     })
 }
 
-export default function useUnsplash(query, num) {
-  return useQuery<any, Error>({
-    queryKey: ['unsplash', query, num],
-    queryFn: splash,
+function useUnsplash(query, num) {
+  return useQuery({
+    queryKey: ['unsplash', query],
+    queryFn: () => splash(query, num),
     staleTime: Infinity,
     gcTime: Infinity,
   });
 }
+
+export default useUnsplash;
